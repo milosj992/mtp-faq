@@ -1,0 +1,9 @@
+.faq-main-wrapper {
+    display: flex;
+    gap:16px;
+}
+.faq-navbar{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
