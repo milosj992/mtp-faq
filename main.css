@@ -6,4 +6,54 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    padding: 24px;
+    width: 320px;
+}
+.faq-navbar-text-with-image{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+}
+.faq-navbar-text-with-image:hover{
+    box-shadow: inset 0px 0px 0px 1px rgba(12, 18, 20, .5);
+}
+.faq-navbar-single-text{
+    margin-left: 24px;
+}
+.faq-main-content{
+    padding: 0 32px;
+    width: 100%;
+}
+.faq-main-content-title{
+    padding: 32px 0;
+    font-weight: 700;
+    font-size: 28px;
+}
+.faq-main-content-title h3{
+    font-family: Arial,Helvetica,sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin: 0 !important;
+}
+.faq-navbar-single-text h3{
+    font-family: Arial,Helvetica,sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+    margin:0 !important;
+}
+.faq-single-category{
+    line-height: 1.4;
+    padding: 16px 0;
+    border-top: solid 1px #efefef;
+}
+.faq-single-category-title span{
+    font-weight: 700;
+}
+.faq-single-category:last-child{
+    border-bottom: solid 1px #efefef;
+}
+.faq-single-category-title{
+    cursor: pointer;
 }
