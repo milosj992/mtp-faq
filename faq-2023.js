@@ -1,22 +1,31 @@
 window.addEventListener('load', function () {
     let listOfSingleCategories = document.getElementsByClassName("faq-single-category-title");
     let textForHide = document.getElementsByClassName("faq-single-category-text");
+    let navBar=document.querySelectorAll(".faq-navbar > div");
+    let mainContent = document.getElementsByClassName("faq-main-content");
 
-    for (let i = 0; i < listOfSingleCategories.length; i++) {
-        listOfSingleCategories[i].addEventListener("click", () => {
-
-            if (textForHide[i].style.display == 'none') {
-                textForHide[i].style.display = 'block';
-            }
-            else {
-                textForHide[i].style.display = 'none';
-            }
-
-            for (let j = 0; j < listOfSingleCategories.length; j++) {
-                if (i !== j) {
-                    textForHide[j].style.display = 'none';
+    const toggleShowHide=(list,text)=>{
+        for (let i = 0; i < list.length; i++) {
+            list[i].addEventListener("click", () => {
+    
+                if (text[i].style.display == 'none') {
+                    text[i].style.display = 'block';
                 }
-            }
-        })
+                else {
+                    text[i].style.display = 'none';
+                }
+    
+                for (let j = 0; j < list.length; j++) {
+                    if (i !== j) {
+                        text[j].style.display = 'none';
+                    }
+                }
+            })
+        }
     }
+
+    toggleShowHide(listOfSingleCategories,textForHide)
+    toggleShowHide(navBar,mainContent)
+
+    
 });
